@@ -1,8 +1,9 @@
+
 {
   
   "name": "BMW MD",
   "description": "Best Whatsapp bot made by Ibrahim Adams",
-  "logo":"https://telegra.ph/file/fd124f7e9271111c3bcc1.jpg",
+  "logo":"https://files.catbox.moe/g8oafi.jpg",
   "keywords": [
     "whatsapp bot"
   ],
@@ -56,16 +57,18 @@
    
     }
     },
-    "formation": {
-                "web": {
-                        "quantity": 1,
-                        "size": "basic"
-                }
-        },
-    "addons": [{ "plan": "heroku-postgresql:essential-0" }],
     "buildpacks": [
-    {"url": "https://github.com/heroku/heroku-buildpack-nodejs#latest"},
-    {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"},
-    {"url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"}
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
   ]
-  }
+}
